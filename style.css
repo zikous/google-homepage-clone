@@ -51,6 +51,7 @@ body {
     top:50%;
     transform: translateY(-50%);
     right: 15px;
+    cursor:pointer;
 }
 
 .buttons-container {
