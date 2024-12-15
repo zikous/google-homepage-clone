@@ -20,3 +20,5 @@ A fun little project to replicate the Google homepage with a search bar and butt
 This is just for fun and doesn't actually do anything when you click the search buttons, but it looks like the real Google homepage!
 
 Enjoy building and customizing it further!
+
+[Live Demo](https://zikous.github.io/google-homepage-clone/)
