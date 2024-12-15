@@ -21,4 +21,8 @@ This is just for fun and doesn't actually do anything when you click the search 
 
 Enjoy building and customizing it further!
 
-[Live Demo](https://zikous.github.io/google-homepage-clone/)
+## Note:
+
+This project is **not yet fully optimized for mobile responsiveness**. Adjustments to ensure proper scaling on mobile devices are still needed.
+
+## [Live Demo](https://zikous.github.io/google-homepage-clone/)
