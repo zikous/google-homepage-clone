@@ -43,7 +43,7 @@ body {
 .navbar-left, .navbar-right, .footer-left, .footer-right {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 35px;
     align-items: center;
 }
 
@@ -70,7 +70,7 @@ body {
 .search-input-container {
     position: relative;
     width: 80%;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .search-input {
