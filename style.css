@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +14,29 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar-container {
+/* Navbar & Footer */
+.navbar-container, .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     width: 100%;
     position: absolute;
-    top: 15px;
     padding: 0 20px;
 }
 
-.navbar-left, .navbar-right {
+.navbar-container {
+    top: 15px;
+}
+
+.footer-container {
+    bottom: 0px;
+    padding: 15px;
+    background-color: #f2f2f2; 
+    color: #555; 
+}
+
+.navbar-left, .navbar-right, .footer-left, .footer-right {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -32,6 +44,87 @@ body {
     font-size: 14px;
 }
 
+.navbar-left, .footer-left {
+    position: relative;
+}
+
+.navbar-right, .footer-right {
+    position: relative;
+    display: flex;
+}
+
+/* Logo */
+.logo-container {
+    margin-top: -70px;
+    margin-bottom: 35px;
+}
+
+.logo-image {
+    width: 300px;
+}
+
+/* Search Input */
+.search-input-container {
+    position: relative;
+    width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    font-size: 12pt;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
+}
+
+.search-input:focus,
+.search-input:hover {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.297);
+}
+
+.search-icon, .microphone-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon {
+    left: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.microphone-icon {
+    right: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.buttons-container {
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.buttons-container button {
+    margin-inline: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #F8F8F8;
+    color: #333;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    box-shadow: 0 0 5px #c8c8c8;
+}
+
+/* Sign In Button */
 .sign-in-button {
     display: inline-flex;
     justify-content: center;
@@ -45,10 +138,15 @@ body {
     border-radius: 4px;
 }
 
-a:hover {
-    text-decoration: underline;
+.sign-in-button:hover {
+    background-color: #357ae8;
 }
 
+.sign-in-button:active {
+    background-color: #2d66c4;
+}
+
+/* Dots */
 #dots {
     font-size: 20px;
     cursor: pointer;
@@ -73,14 +171,7 @@ a:hover {
     visibility: visible;
 }
 
-.sign-in-button:hover {
-    background-color: #357ae8;
-}
-
-.sign-in-button:active {
-    background-color: #2d66c4;
-}
-
+/* Footer Links */
 ul {
     list-style-type: none;
     margin: 0;
@@ -88,79 +179,6 @@ ul {
     font-size: 12pt;
 }
 
-.navbar-left {
-    position: relative;
-}
-
-.navbar-right {
-    position: relative;
-    display: flex;
-}
-
-.logo-container {
-    margin-top: -70px;
-    margin-bottom: 35px;
-}
-
-.logo-image {
-    width: 300px;
-}
-
-.search-input-container {
-    position: relative;
-    width: 600px;
-}
-
-.search-input {
-    width: 600px;
-    height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 20px;
-    font-size: 12pt;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
-}
-
-.search-icon {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
-}
-
-.microphone-icon {
-    width: 15px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    cursor: pointer;
-}
-
-.buttons-container {
-    margin-top: 35px;
-    justify-content: center;
-}
-
-.buttons-container button {
-    margin-inline: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: #F8F8F8;
-    color: #333;
-    cursor: pointer;
-}
-
-.buttons-container button:hover {
-    box-shadow: 0 0 5px #c8c8c8;
-}
-
-.search-input:focus,
-.search-input:hover {
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.297);
+a:hover {
+    text-decoration: underline;
 }
