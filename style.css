@@ -10,9 +10,95 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    padding: 0 20px;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.sign-in-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+    font-weight: bold;
+    background-color: #4285F4;
+    color: white;
+    border-style: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#dots {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+#dots::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#dots:hover::before {
+    visibility: visible;
+}
+
+.sign-in-button:hover {
+    background-color: #357ae8;
+}
+
+.sign-in-button:active {
+    background-color: #2d66c4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+
+.navbar-left {
+    position: relative;
+}
+
+.navbar-right {
+    position: relative;
+    display: flex;
 }
 
 .logo-container {
+    margin-top: -70px;
     margin-bottom: 35px;
 }
 
@@ -48,15 +134,15 @@ body {
 .microphone-icon {
     width: 15px;
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     right: 15px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .buttons-container {
     margin-top: 35px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .buttons-container button {
